@@ -1,0 +1,111 @@
+.company-logo {
+    background-color: #000;
+}
+
+.icon-search{
+    height: 50px;width: 50px;
+
+}
+
+.banner-img {
+    height: 714px;
+}
+
+.b-line {
+    background-color: #000;
+    color: #fff;
+}
+
+.box {
+    width: 50%;
+    /* background-color: #444; */
+
+}
+
+.box img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.box-text {
+    width: 50%;
+    /* background-color: rgb(250, 101, 101); */
+    padding: 50px 50px;
+}
+
+.box-title {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.b-line-title {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+figcaption {
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.exp-img {
+    /* background-color: #555; */
+    height: 500px;
+
+}
+
+.exp-img img {
+    height: 292px;
+   
+
+}
+
+.exp-top {
+    color: #0070cc;
+    text-align: center;
+    
+}
+
+.exp-text {
+    text-align: center;
+}
+.exp-title {
+    text-align: center;
+    margin: 40px auto;
+}
+.demo-title{
+    text-align: center;
+    margin: 30px auto;
+}
+
+h4{
+    color: #0070cc;
+    text-align: center;
+}
+.w-100{
+    object-fit: contain;
+}
+.img-wrap{
+    height: 500px;
+
+
+}
+.banner{
+    background-color: #565;
+    /* width: 100%;
+    height: 800px; */
+}
+.banner img{
+    width: 100%;
+    /* height: 500px; */
+}
+.banner-img {
+    object-fit: cover;
+}
+
