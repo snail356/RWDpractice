@@ -11,6 +11,10 @@
 .logo {
   margin-left: 20px;
 }
+.banner img{
+  height: auto;
+  width: 100%;
+}
 
 .logo a {
   text-decoration: none;
@@ -81,6 +85,7 @@
 #nav_control:checked ~ .header .navb .nav-links {
   left: 0;
 }
+
 
 #nav_control:checked ~ .header .navb .nav_btn {
   background-color: #fff;

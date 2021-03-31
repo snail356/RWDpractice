@@ -23,7 +23,7 @@
 
             </div>
         </div>
-        <input type="checkbox" name="nav_control" id="nav_control">
+        <input type="checkbox" name="nav_control" id="nav_control" onclick="disableScroll()">
         <div class="container-fluid my-3 header">
             <div class="row navb">
                 <label for="nav_control" class="nav_btn"><span></span></label>
@@ -60,10 +60,13 @@
     </header>
     <!-- banner1 -->
     <banner>
+        <img src="image/playstation-5-games-homepage-marquee-desktop-01-ps5-12nov20-cht-tw.jfif" alt="">
         <div class="container-fluid banner"
-            style="height: 900px;
+            style="height: 900px;width: 100%;
+            
         background: url('https://media.playstation.com/is/image/SCEA/playstation-5-games-homepage-marquee-desktop-01-ps5-12nov20-cht-tw?$native_xxl_nt$')center center no-repeat;background-size: cover;">
             <div class="b-line row justify-content-between d-flex align-items-center">
+               
                 <div class="texe-left my-4 ml-3">
                     <div class="b-line-title">為您推薦的遊戲<span style="margin:0 25px;font-weight: 200;">| </span></div>
                 </div>
@@ -567,7 +570,21 @@
 
 
 
+    <script>
+        function disableScroll() {
+            // Get the current page scroll position
+            scrollTop =
+                window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft =
+                window.pageXOffset || document.documentElement.scrollLeft,
 
+                // if any scroll is attempted,
+                // set this to the previous value
+                window.onscroll = function () {
+                    window.scrollTo(scrollLeft, scrollTop);
+                };
+        }
+    </script>
 
 
 
