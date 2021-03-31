@@ -16,11 +16,6 @@
   text-decoration: none;
 }
 
-/* 漢堡選單 */
-.nav_btn {
-  display: none;
-}
-
 .nav-links {
   list-style: none;
   display: -webkit-box;
@@ -41,7 +36,7 @@
   text-decoration: none;
 }
 
-#nav-control {
+#nav_control {
   display: none;
 }
 
@@ -51,9 +46,74 @@
 
 /* 漢堡選單 */
 .nav_btn {
+  display: none;
   height: 50px;
   width: 50px;
-  background-color: red;
+  position: relative;
+}
+
+.nav_btn::before {
+  content: "";
+  position: absolute;
+  margin: 25% 0;
+  left: 7px;
+  height: 2px;
+  width: 36px;
+  background-color: #333;
+  -webkit-box-shadow: 0 13px 0 #333;
+          box-shadow: 0 13px 0 #333;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav_btn::after {
+  content: "";
+  position: absolute;
+  margin: 75% 0;
+  left: 7px;
+  height: 2px;
+  width: 36px;
+  background-color: #333;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#nav_control:checked ~ .header .navb .nav-links {
+  left: 0;
+}
+
+#nav_control:checked ~ .header .navb .nav_btn {
+  background-color: #fff;
+}
+
+#nav_control:checked ~ .header .navb .nav_btn::before {
+  content: "";
+  position: absolute;
+  margin: 50% 0;
+  left: 7px;
+  height: 2px;
+  width: 36px;
+  background-color: #333;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#nav_control:checked ~ .header .navb .nav_btn::after {
+  content: "";
+  position: absolute;
+  margin: 50% 0;
+  left: 7px;
+  height: 2px;
+  width: 36px;
+  background-color: #333;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 @media (max-width: 768px) {
@@ -68,6 +128,9 @@
     z-index: 2;
     height: calc(100vh - 50px);
     top: 50px;
+    left: -100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .nav-links div {
     display: block;
@@ -76,6 +139,7 @@
   }
   .nav_btn {
     position: absolute;
+    display: block;
   }
   .logo {
     position: relative;
