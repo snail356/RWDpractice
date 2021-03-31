@@ -82,6 +82,7 @@
   left: 0;
 }
 
+
 #nav_control:checked ~ .header .navb .nav_btn {
   background-color: #fff;
 }
