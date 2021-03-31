@@ -571,6 +571,7 @@
 
     <script>
         function disableScroll() {
+            event.preventDefault();
             // Get the current page scroll position
             scrollTop =
                 window.pageYOffset || document.documentElement.scrollTop;
