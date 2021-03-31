@@ -194,6 +194,9 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .container-fluid.banner{
+    height: 500px;
+  }
   .box-title {
     font-size: 30px;
   }
@@ -270,11 +273,11 @@ h4 {
 .banner {
   background-color: #565;
   position: relative;
-}
-
-.banner img {
+  height: 900px;
   width: 100%;
 }
+
+
 
 .banner-img {
   object-fit: cover;

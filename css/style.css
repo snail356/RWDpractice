@@ -12,7 +12,6 @@
   margin-left: 20px;
 }
 
-
 .logo a {
   text-decoration: none;
 }
@@ -82,7 +81,6 @@
 #nav_control:checked ~ .header .navb .nav-links {
   left: 0;
 }
-
 
 #nav_control:checked ~ .header .navb .nav_btn {
   background-color: #fff;
@@ -213,6 +211,9 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .container-fluid.banner {
+    height: 500px;
+  }
   .box-title {
     font-size: 30px;
   }
@@ -288,9 +289,7 @@ h4 {
 .banner {
   background-color: #565;
   position: relative;
-}
-
-.banner img {
+  height: 900px;
   width: 100%;
 }
 
