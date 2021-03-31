@@ -40,7 +40,7 @@
   display: none;
   height: 50px;
   width: 50px;
-//   background-color: red;
+  //   background-color: red;
   position: relative;
   &::before {
     content: "";
@@ -94,7 +94,9 @@
   }
 }
 
+
 @media (max-width: 768px) {
+  
   .nav-links {
     display: block;
     list-style: none;
@@ -120,8 +122,20 @@
   }
 
   .logo {
-    position: relative;
+    // position: relative;
     margin: 0 auto;
+  }
+  .navl {
+    .my_btn {
+      display: none;
+    }
+    .fa-search {
+      display: none;
+    }
+   
+  }
+  .article {
+      padding: 0 50px;
   }
 }
 
@@ -241,7 +255,9 @@ figcaption {
   text-align: center;
   margin: 30px auto;
 }
-
+.demo-img{
+    margin: auto;
+}
 h4 {
   color: #0070cc;
   text-align: center;

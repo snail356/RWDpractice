@@ -142,8 +142,16 @@
     display: block;
   }
   .logo {
-    position: relative;
     margin: 0 auto;
+  }
+  .navl .my_btn {
+    display: none;
+  }
+  .navl .fa-search {
+    display: none;
+  }
+  .article {
+    padding: 0 50px;
   }
 }
 
@@ -259,6 +267,10 @@ figcaption {
 .demo-title {
   text-align: center;
   margin: 30px auto;
+}
+
+.demo-img {
+  margin: auto;
 }
 
 h4 {
