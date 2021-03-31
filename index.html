@@ -8,172 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.css">
-    <style>
-        .company-logo {
-            background-color: #000;
-        }
-
-        .icon-search {
-            height: 50px;
-            width: 50px;
-
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-        }
-
-        li {
-            line-height: 50px;
-        }
-
-        .banner-img {
-            height: 714px;
-        }
-
-        .banner1 {
-            position: relative;
-        }
-
-        .b-line {
-            margin: 0px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            position: absolute;
-            z-index: 12;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-
-        .box {
-            width: 50%;
-            /* background-color: #444; */
-
-        }
-
-        .box img {
-            width: 100%;
-            object-fit: contain;
-        }
-
-        .box-text {
-            width: 50%;
-            /* background-color: rgb(250, 101, 101); */
-            padding: 50px 50px;
-        }
-
-        .box-title {
-            font-size: 48px;
-            font-weight: 500;
-        }
-
-        .b-line-title {
-            font-weight: 800;
-            font-size: 25px;
-        }
-
-
-        h2 {
-            text-align: center;
-        }
-
-        @media(max-width:768px) {
-            .box-title {
-                font-size: 30px;
-            }
-
-            .box img {
-                margin: 20px 0;
-            }
-
-            .box-text {
-                width: 100%;
-                padding: 50px 50px;
-            }
-        }
-
-        @media(max-width:375px) {
-            .box-title {
-                font-size: 20px;
-            }
-
-            .box-text {
-                width: 100%;
-                padding: 50px 50px;
-            }
-
-            .box img {
-                margin: 20px 0;
-            }
-        }
-
-        figcaption {
-            font-weight: 700;
-            font-size: 20px;
-
-        }
-
-        .exp-img {
-            /* background-color: #555; */
-            height: 500px;
-
-        }
-
-        .exp-img img {
-            height: 292px;
-
-
-        }
-
-        .exp-top {
-            color: #0070cc;
-            text-align: center;
-
-        }
-
-        .exp-text {
-            text-align: center;
-        }
-
-        .exp-title {
-            text-align: center;
-            margin: 40px auto;
-        }
-
-        .demo-title {
-            text-align: center;
-            margin: 30px auto;
-        }
-
-        h4 {
-            color: #0070cc;
-            text-align: center;
-        }
-
-        .w-100 {
-            object-fit: contain;
-        }
-
-
-
-        .banner {
-            background-color: #565;
-            position: relative;
-
-        }
-
-        .banner img {
-            width: 100%;
-
-        }
-
-        .banner-img {
-            object-fit: cover;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
@@ -188,35 +23,36 @@
 
             </div>
         </div>
-
-        <div class="container-fluid my-3">
-            <div class="row ">
-                <ul class="nav-links my-auto mr-auto">
-                    <div class="logo my-auto ">
-                        <svg class="shared-nav-ps-logo mr-5" width="50px" height="50px" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 50 50">
+        <input type="checkbox" name="nav-control" id="nav-control">
+        <div class="container-fluid my-3 header">
+            <div class="row navb">
+                <label for="nav-control" class="nav_btn"><span>選單</span></label>
+                <div class="logo my-auto ">
+                    <svg class="shared-nav-ps-logo mr-5" width="50px" height="50px" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 50 50">
+                        <g>
                             <g>
-                                <g>
-                                    <path d="M5.8,32.1C4.3,33.1,4.8,35,8,35.9c3.3,1.1,6.9,1.4,10.4,0.8c0.2,0,0.4-0.1,0.5-0.1v-3.4l-3.4,1.1
+                                <path d="M5.8,32.1C4.3,33.1,4.8,35,8,35.9c3.3,1.1,6.9,1.4,10.4,0.8c0.2,0,0.4-0.1,0.5-0.1v-3.4l-3.4,1.1
                          c-1.3,0.4-2.6,0.5-3.9,0.2c-1-0.3-0.8-0.9,0.4-1.4l6.9-2.4V27l-9.6,3.3C8.1,30.7,6.9,31.3,5.8,32.1z M29,17.1v9.7
                          c4.1,2,7.3,0,7.3-5.2c0-5.3-1.9-7.7-7.4-9.6C26,11,23,10.1,20,9.5v28.9l7,2.1V16.2c0-1.1,0-1.9,0.8-1.6C28.9,14.9,29,16,29,17.1z
                           M42,29.8c-2.9-1-6-1.4-9-1.1c-1.6,0.1-3.1,0.5-4.5,1l-0.3,0.1v3.9l6.5-2.4c1.3-0.4,2.6-0.5,3.9-0.2c1,0.3,0.8,0.9-0.4,1.4
                          l-10,3.7V40L42,34.9c1-0.4,1.9-0.9,2.7-1.7C45.4,32.2,45.1,30.8,42,29.8z" fill="#0070d1"></path>
-                                </g>
                             </g>
-                        </svg>
-                    </div>
-                    <li><a href="#" class="mr-5 text-dark">遊戲<i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#" class="mr-5 text-dark">硬體<i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#" class="mr-5 text-dark">服務<i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#" class="mr-5 text-dark">最新消息<i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#" class="mr-5 text-dark">購物<i class="fas fa-angle-down"></i></a></li>
-                    <li><a href="#" class="mr-5 text-dark">支援<i class="fas fa-angle-down"></i></a></li>
-                </ul>
+                        </g>
+                    </svg>
+                </div>
+                <div class="nav-links  mr-auto">
+                    <div><a href="#" class="text-dark">遊戲<i class="fas fa-angle-down"></i></a></div>
+                    <div><a href="#" class="text-dark">硬體<i class="fas fa-angle-down"></i></a></div>
+                    <div><a href="#" class="text-dark">服務<i class="fas fa-angle-down"></i></a></div>
+                    <div><a href="#" class="text-dark">最新消息<i class="fas fa-angle-down"></i></a></div>
+                    <div><a href="#" class="text-dark">購物<i class="fas fa-angle-down"></i></a></div>
+                    <div><a href="#" class="text-dark">支援<i class="fas fa-angle-down"></i></a></div>
+                </div>
                 <div class="login ml-auto ">
-                    <a href="#" class="text-dark mr-4">My PlayStation</a>
-                    <button class="btn btn-dark mx-2 mr-4">登入</button>
+                    <a href="#" class="my_btn text-dark mr-4">My PlayStation</a>
+                    <button class="login btn btn-dark mx-2 mr-4">登入</button>
                     <i class="fas fa-search mr-4"></i>
                 </div>
             </div>
@@ -363,7 +199,7 @@
                         <p>現已推出</p>
                     </figure>
                 </div>
-                <div class="demo-img col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="demo-img col-11 col-sm-6 col-md-4 col-lg-3">
                     <figure class="img-wrap">
                         <img class="w-100"
                             src="https://media.playstation.com/is/image/SCEA/marvels-avengers-boxart-02-ps4-04feb20-en-us?$native_sm_nt$"
