@@ -573,24 +573,25 @@
         const navbartoggle = document.querySelector('#nav_control')
 
         function disableScroll() {
-
+            window.onscroll = '';
             if (navbartoggle.checked) {
                 console.log('checked')
                 scrollTop =
-                window.pageYOffset || document.documentElement.scrollTop;
-            scrollLeft =
-                window.pageXOffset || document.documentElement.scrollLeft,
+                    window.pageYOffset || document.documentElement.scrollTop;
+                scrollLeft =
+                    window.pageXOffset || document.documentElement.scrollLeft,
 
-                // if any scroll is attempted,
-                // set this to the previous value
-                window.onscroll = function () {
-                    window.scrollTo(scrollLeft, scrollTop);
-                };
-            } else {
-                console.log('not checked')
-                window.onscroll=function (){};
+                    // if any scroll is attempted,
+                    // set this to the previous value
+                    window.onscroll = function () {
+                        window.scrollTo(scrollLeft, scrollTop);
+                    };
             }
-         }
+            //else {
+            //     console.log('not checked')
+            //     window.onscroll=function (){};
+            // }
+        }
     </script>
 
 
